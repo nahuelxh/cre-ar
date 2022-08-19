@@ -53,6 +53,25 @@
     font-weight: 1000;
 }
 
+.logotipo {
+    animation-name: logotipo;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes logotipo {
+    0% {
+
+    }
+    50% {
+    transform: rotatey(360deg)
+    }
+    100% {
+    
+    }
+}
+
 /* ------------------------------------------Main------------------------------------------ */
 
 .slogan {
@@ -105,12 +124,18 @@ row-gap: 15px;
 }
 
 .imagesart {
-    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid #ffffff;
+    border-width: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 1s ease;
 }
 
 .imagesart:hover {
-    width: 235px;
-    height: 215px;
+    width: 290px;
+    height: 270px;
 }
 
 .fondoform {
@@ -160,6 +185,7 @@ row-gap: 15px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left center;
+    background-attachment: fixed;
     height: 610px;
     position: relative;
 }
@@ -167,8 +193,8 @@ row-gap: 15px;
 .atelierph p {
     background-color: #B64201;
     font-family: Nanumgothicbold ;
-    font-size: 20px;
-    padding: 50px;
+    font-size: 22px;
+    padding: 40px;
 }
 
 .curso1 {
@@ -179,6 +205,7 @@ row-gap: 15px;
     position: relative;
     filter: blur(3px);
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .curso2 {
@@ -189,6 +216,7 @@ row-gap: 15px;
     position: relative;
     filter: blur(3px);
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .curso3 {
@@ -199,6 +227,7 @@ row-gap: 15px;
     position: relative;
     filter: blur(3px);
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .curso1:hover {filter: blur(0); transition: all 0.5s;}
