@@ -193,8 +193,12 @@ row-gap: 15px;
 .atelierph p {
     background-color: #B64201;
     font-family: Nanumgothicbold ;
-    font-size: 22px;
-    padding: 40px;
+    font-size: 20px;
+    padding: 30px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .curso1 {
@@ -206,6 +210,7 @@ row-gap: 15px;
     filter: blur(3px);
     transition: all 0.5s;
     cursor: pointer;
+    border-radius: 3px;
 }
 
 .curso2 {
@@ -217,6 +222,7 @@ row-gap: 15px;
     filter: blur(3px);
     transition: all 0.5s;
     cursor: pointer;
+    border-radius: 3px;
 }
 
 .curso3 {
@@ -228,6 +234,7 @@ row-gap: 15px;
     filter: blur(3px);
     transition: all 0.5s;
     cursor: pointer;
+    border-radius: 3px;
 }
 
 .curso1:hover {filter: blur(0); transition: all 0.5s;}
