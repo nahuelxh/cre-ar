@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../Styles/style.css">
     <title>Cre-Ar</title>
     <link rel="shorcut icon" href="../Images/logoinicio.png">
 </head>
+
 <body>
-        <header>
-            <nav class="navbar">
-                <div class="logotipo">
-                    <a href="../index.html"> <img src="../Images/logoinicio.png" alt="logotipo" height="60px"> </a>
-                </div>
-                <div class="navbar2">
-                    <ul>
+    <header class="container-fluid">
+        <div class="row">
+            <nav class="navbar-dark navbar-expand-lg container-fluid navbarcheto navbar">
+                <a class="navbar-brand logotipo" href="../index.html">
+                    <img src="../Images/logoinicio.png" alt="logotipo" height="75px">
+                </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li>
                             <a href="./cursos.html">Cursos</a>
                         </li>
@@ -31,15 +38,22 @@
                     </ul>
                 </div>
             </nav>
+        </div>
     </header>
 
-    <section class="atelierph">
-        <p>Cre_ar nació en el año 2008, convocando a un espacio de Arte multidisciplinario dirigido a niños, jóvenes y adultos.
-            Educando desde y para el Arte, un gran desafío apostando a inteligencias múltiples y a una educación emocional que aporte al alumno el disfrute, exploración, experimentación y producción de obras creativas, particulares y personales. Recorriendo diferentes técnicas, elementos del lenguaje visual y conocimiento de la historia del arte y artistas de todos los tiempos.
-            Música, teatro, fotografía, seminarios con especialistas, exposiciones anuales y viajes culturales conforman la historia y recorrido del Atelier. 
-            La construcción de una propuesta innovadora en la ciudad de Villaguay, Entre Ríos.
+    <section>
+        <div class="row">
+            <p class="atelierph">
+                Cre_ar nació en el año 2008, convocando a un espacio de Arte multidisciplinario dirigido a niños, jóvenes y adultos.
+                Educando desde y para el Arte, un gran desafío apostando a inteligencias múltiples y a una educación emocional que aporte al alumno el disfrute, exploración, experimentación y producción de obras creativas, particulares y personales. Recorriendo diferentes técnicas, elementos del lenguaje visual y conocimiento de la historia del arte y artistas de todos los tiempos.
+                Música, teatro, fotografía, seminarios con especialistas, exposiciones anuales y viajes culturales conforman la historia y recorrido del Atelier. 
+                La construcción de una propuesta innovadora en la ciudad de Villaguay, Entre Ríos.
             </p>
+            <img src="../Images/Espacio.jpg" alt="espacio de trabajo">
+        </div>
     </section>
+
+    <img-fluid></img-fluid>
 
     <footer class="footer">
         <div class="box-footer"> 
@@ -88,5 +102,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

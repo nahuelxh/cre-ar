@@ -15,30 +15,26 @@
 
 /* ------------------------------------------Header------------------------------------------ */
 
-.navbar {
+.navbarcheto {
     background-color: #000000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-.navbar a {
-    position: relative;
+
+.navbarcheto a {
     left: 7px;
     top: 3px;
 }
-.navbar ul {
+.navbarcheto {
     list-style-type: none;
     padding: 4px;
 }
 
-.navbar ul li {
-    display: inline-block;
+.navbarcheto li {
     margin: 4px;
     padding: 3px;
 }
 
-.navbar ul li a {
-    font-size: 18px;
+.navbarcheto li a {
+    font-size: 20px;
     color: #B64201;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -47,15 +43,15 @@
     margin: 10px;
 }
 
-.navbar ul li a:hover {
+.navbarcheto li a:hover {
     color: #ff5e00;
-    font-size: 19px;
+    font-size: 22px;
     font-weight: 1000;
 }
 
 .logotipo {
     animation-name: logotipo;
-    animation-duration: 7s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
@@ -75,32 +71,23 @@
 /* ------------------------------------------Main------------------------------------------ */
 
 .slogan {
-    background-image: linear-gradient(rgba(0, 0, 0,1), rgba(0, 0, 0, 0.1) ),url(../Images/Detalles5.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0,1), rgba(0, 0, 0, 0.1) );
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left center;
     height: 610px;
-    position: relative;
 }
 
-#slogan1 {
+.slogan1 {
     font-family: Nanumgothicextrabold ;
-    font-size: 44px;
+    font-size: 32px;
     color: rgb(255, 255, 255);
-    width: 35%;
-    position: relative;
-    top: 210px;
-    left: 110px;
 }
 
-#slogan2 {
+.slogan2 {
     font-family: Nanumgothicextrabold ;
-    font-size: 26px;
-    color: #DB8200 ;
-    width: 35%;
-    position: relative;
-    top: 225px;
-    left: 112px;
+    font-size: 28px;
+    color: #DB8200;
     font-weight: 1000;
 }
 
@@ -181,16 +168,6 @@ row-gap: 15px;
 }
 
 .atelierph {
-    background-image: linear-gradient(rgba(0, 0, 0,1), rgba(0, 0, 0, 0.2) ),url(../Images/Espacio.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-attachment: fixed;
-    height: 610px;
-    position: relative;
-}
-
-.atelierph p {
     background-color: #B64201;
     font-family: Nanumgothicbold ;
     font-size: 20px;
