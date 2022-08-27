@@ -16,7 +16,7 @@
 /* ------------------------------------------Header------------------------------------------ */
 
 .navbar {
-    background-color: #000000;
+    background-color: #DED29E;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -244,13 +244,20 @@ row-gap: 15px;
 /* ------------------------------------------Footer------------------------------------------ */
 
 .footer {
-    background-color: #DB8200;
+    background-color: #DED29E;
 }
 
-.footer .networks {
-    display: flex;
-    justify-content: space-between;
-    width: 17%;
+.networks a {
+    text-decoration: none;
+    color: #DB8200;
+    font-size: 50px;
+    margin: 25px;
+}
+
+.networks a i:hover {
+    color: #508104;
+    transform: scale(1.3);
+    transition: ease-in-out 0.2s;
 }
 
 .footer .networks li {
@@ -262,22 +269,17 @@ footer ul {
     list-style-type: none;
 }
 
-.footer .networks li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-
-#copy {
+.copy {
     font-family: Nanumgothicbold ;
-    font-size: 12px;
-    width: 10%;
-    margin-bottom: 18px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .footer .location {
     font-family: Nanumgothicextrabold ;
     font-size: 12px;
     color: rgb(0, 0, 0);
+    cursor: pointer;
 }
 
 .footer .location li {
@@ -290,29 +292,14 @@ footer ul {
     align-items: center;
 }
 
-.div1 {
-    position: relative;
-}
-
-.div1 .div2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: 0.2s;
-}
-
-.div1:hover .div2 {
-    opacity: 1;
-}
 
 @media screen and (max-width: 768px) {
     .gallery {display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; }
-    .footer {height: 80vh;}
+    .footer {height: 65vh;}
     .box-footer {display: flex; flex-direction: column;}
     .footer .networks {display: flex; justify-content: center;}
-    .footer .location {font-size: 20px; text-align: center;}
-    #copy {font-size: 15px; text-align: center; }
+    .footer .location {font-size: 14px;}
+    .copy {font-size: 12px;}
     .navbar2 {display: none;}
     .navbar {justify-content: center;}
     .cursos {display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr 1fr 1fr;}
