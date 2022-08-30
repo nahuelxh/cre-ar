@@ -84,46 +84,29 @@
     height: 30vh;
     width: 100%;
     font-family: Nanumgothicbold;
-    src: url(../Fonts/NanumGothic-Bold.ttf);
-}
-.sloganmax {
-    background-color: #000000;
-}
-
-.slogan1 {
-    font-family: Nanumgothicextrabold ;
-    font-size: 44px;
-    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 16px;
+    color: #181818;
 }
 
-.slogan2 {
-    font-family: Nanumgothicextrabold ;
-    font-size: 26px;
-    color: #DB8200 ;
-    width: 35%;
-    position: relative;
-    top: 360px;
-    left: 0px;
-    font-weight: 1000;
+.box-gallery {
+    background-color: #181818;
 }
 
 .titlegall{
-    font-family: Nanumgothicbold ;
+    font-family: Nanumgothicbold;
     font-size: 20px;
     background-color: #B64201;
-    color: #ffffff;
-    padding: 7px;
+    color: #DED29E;
+    padding: 10px;
     text-align: center;
 }
 
 .gallery {
     display: grid;
-    background-color: #000000;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
-    column-gap: 5px;
-    row-gap: 15px;
 }
 
 .imagesart {
@@ -142,7 +125,7 @@
 }
 
 .fondoform {
-    background-color: #000000;
+    background-color: #181818;
     padding-top: 1px;
 }
 
@@ -150,7 +133,7 @@
     font-family: Nanumgothicbold ;
     font-size: 20px;
     background-color: #B64201;
-    color: #ffffff;
+    color: #DED29E;
     padding: 7px;
     width: 25%;
     margin-top: 1%;
@@ -162,6 +145,7 @@
     width: 100%;
     margin-top: 2%;
     margin-bottom: 3%;
+    box-shadow: 0px 5px 10px #181818;
 }
 
 .cuerpo-form {
@@ -178,70 +162,117 @@
     height: 120vh;
 }
 
-.atelierph p {
+.atelierph {
     background-color: #B64201;
     font-family: Nanumgothicbold;
-    color: #000000;
+    color: #181818;
     font-size: 20px;
     padding: 30px;
     letter-spacing: 1px;
     line-height: 30px;
     text-align: center;
     cursor: pointer;
+    box-shadow: 0px 6px 12px #181818;
 }
 
-.cursos {
-    background-color: #000000;
-    height: 100vh;
-    font-family: Nanumgothicbold ;
-    font-size: 25px;
+.boxcursos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 102vh;
+    background-color: #508104;
+}
+
+.card {
+    position: relative;
+    width: 380px;
+    height: 520px;
+    margin: 20px;
+    cursor: pointer;
+    background-color: #508104;
+    border: none;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 1.5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0px 7px 12px #000000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
     color: #ffffff;
-    font-weight: 900;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 5px;
+    background: rgb(0,0,0,.5);
+    text-align: center;
+    font-family: Nanumgothicbold;
 }
 
-.curso1 {
-    background-image: url(../Images/Detalles1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left center;
-    position: relative;
-    filter: blur(3px);
-    transition: all 0.5s;
-    cursor: pointer;
-    border-radius: 3px;
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #181818;
+    padding: 15px;
+    color: #DED29E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 7px 12px #000000;
+    font-family: Nanumgothicbold;
 }
 
-.curso2 {
-    background-image: url(../Images/Paleta2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left center;
-    position: relative;
-    filter: blur(3px);
-    transition: all 0.5s;
-    cursor: pointer;
-    border-radius: 3px;
+.card .back .link {
+    border-top: solid 2px #DB8200;
+    height: 50px;
+    line-height: 50px;
+    font-family: Nanumgothicbold;
 }
 
-.curso3 {
-    background-image: url(../Images/Detalles2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left center;
-    position: relative;
-    filter: blur(3px);
-    transition: all 0.5s;
-    cursor: pointer;
-    border-radius: 3px;
+.card .back .link a {
+    color: #DED29E;
+    font-family: Nanumgothicbold;
+    font-size: 20px;
 }
 
-.curso1:hover {filter: blur(0); transition: all 0.5s;}
-.curso2:hover {filter: blur(0); transition: all 0.5s;}
-.curso3:hover {filter: blur(0); transition: all 0.5s;}
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-family: Nanumgothicbold;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+    font-family: Nanumgothicbold;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
 
 /* ------------------------------------------Footer------------------------------------------ */
 
@@ -296,7 +327,8 @@ footer ul {
 
 
 @media screen and (max-width: 768px) {
-    .gallery {display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; }
+    .gallery {display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr;}
+    .titlegall {font-size: 18px;}
     .footer {padding: 25px;}
     .box-footer {display: flex; flex-direction: column;}
     .footer .networks {display: flex; justify-content: center;}
@@ -310,10 +342,11 @@ footer ul {
     .fondoform {display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr;}
     .title-form {font-size: 15px; text-align: center; width: 100%;}
     .cuerpo-form {width: 100%;}
-    .atelierph p {background-color: #db830050; color: #ffffff; text-align: center; font-size: 21px; height: 120vh;}
+    .atelierph {background-color: #db830033; color: #DED29E; text-align: center; font-size: 21px; height: 120vh;}
     #parallax {background-position: center;}
     #parallax2 {background-position: center;}
     #parallax3 {background-position: center;}
+    .box-intro {font-size: 12px; text-align: center;}
 }
 
 @media screen and (max-width: 992px) {
