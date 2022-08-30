@@ -15,8 +15,12 @@
 
 /* ------------------------------------------Header------------------------------------------ */
 
+.fondonavbar {
+    background-color: #ffda89;
+}
+
 .navbar ul li a {
-    font-size: 18px;
+    font-size: 22px;
     color: #B64201;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -27,8 +31,8 @@
 
 .navbar ul li a:hover {
     color: #ff5e00;
-    font-size: 19px;
-    font-weight: 1000;
+    font-size: 24px;
+    font-weight: 900;
 }
 
 .logotipo {
@@ -36,6 +40,30 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+}
+
+#parallax {
+    background-image: linear-gradient(rgba(255, 218, 137, 0.445), rgba(0, 0, 0, 0.1) ), url(../Images/Detalles6.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+
+#parallax2 {
+    background-image: linear-gradient(rgb(255, 218, 137, 0.445), rgba(0, 0, 0, 0.1) ), url(../Images/Detalles5.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+
+#parallax3 {
+    background-image: linear-gradient(rgb(255, 218, 137, 0.445), rgba(0, 0, 0, 0.1) ), url(../Images/Detalles3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
 }
 
 @keyframes logotipo {
@@ -51,15 +79,21 @@
 }
 
 /* ------------------------------------------Main------------------------------------------ */
+.box-intro {
+    background-color: #DB8200;
+    height: 30vh;
+    width: 100%;
+    font-family: Nanumgothicbold;
+    src: url(../Fonts/NanumGothic-Bold.ttf);
+}
+.sloganmax {
+    background-color: #000000;
+}
 
 .slogan1 {
     font-family: Nanumgothicextrabold ;
     font-size: 44px;
     color: rgb(255, 255, 255);
-    width: 35%;
-    position: relative;
-    top: 255px;
-    left: 112px;
 }
 
 .slogan2 {
@@ -83,13 +117,13 @@
 }
 
 .gallery {
-display: grid;
-background-color: #000000;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr;
-justify-items: center;
-column-gap: 5px;
-row-gap: 15px;
+    display: grid;
+    background-color: #000000;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    column-gap: 5px;
+    row-gap: 15px;
 }
 
 .imagesart {
@@ -99,7 +133,7 @@ row-gap: 15px;
     border-width: 5px;
     border-radius: 8px;
     cursor: pointer;
-    transition: all 1s ease;
+    transition: all 1s ease-in-out;
 }
 
 .imagesart:hover {
@@ -136,9 +170,29 @@ row-gap: 15px;
     width: 25%;
 }
 
+#parallaxw1 {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.1) ), url(../Images/Espacio.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+
+.atelierph p {
+    background-color: #B64201;
+    font-family: Nanumgothicbold;
+    color: #000000;
+    font-size: 20px;
+    padding: 30px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
 .cursos {
     background-color: #000000;
-    height: 80vh;
+    height: 100vh;
     font-family: Nanumgothicbold ;
     font-size: 25px;
     color: #ffffff;
@@ -146,28 +200,7 @@ row-gap: 15px;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
-}
-
-.atelierph {
-    background-image: linear-gradient(rgba(0, 0, 0,1), rgba(0, 0, 0, 0.2) ),url(../Images/Espacio.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-attachment: fixed;
-    height: 610px;
-    position: relative;
-}
-
-.atelierph p {
-    background-color: #B64201;
-    font-family: Nanumgothicbold ;
-    font-size: 20px;
-    padding: 30px;
-    letter-spacing: 1px;
-    line-height: 30px;
-    text-align: center;
-    cursor: pointer;
+    column-gap: 5px;
 }
 
 .curso1 {
@@ -272,14 +305,15 @@ footer ul {
     .copy {font-size: 12px;}
     .navbar2 {display: none;}
     .navbar {justify-content: center;}
-    .cursos {display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr 1fr 1fr;}
+    .cursos {display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr 1fr 1fr; height: 300vh;}
     .slogan {display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr;}
-    #slogan1 {font-size: 35px; text-align: center; position: relative; top: 50px; left: 120px;}
-    #slogan2 {font-size: 20px; text-align: center; position: absolute; top: 305px; left: 125px;}
     .fondoform {display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr;}
     .title-form {font-size: 15px; text-align: center; width: 100%;}
     .cuerpo-form {width: 100%;}
-    .atelierph p {background-color: #b6430100; color: #ffffff; text-align: center; font-size: 18px;}
+    .atelierph p {background-color: #db830050; color: #ffffff; text-align: center; font-size: 21px; height: 120vh;}
+    #parallax {background-position: center;}
+    #parallax2 {background-position: center;}
+    #parallax3 {background-position: center;}
 }
 
 @media screen and (max-width: 992px) {

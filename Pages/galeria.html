@@ -14,25 +14,43 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logotipo">
-                <a href="../index.html"> <img src="../Images/logoinicio.png" alt="logotipo" height="60px"> </a>
-            </div>
-            <div class="navbar2">
-                <ul>
-                    <li>
-                        <a href="./cursos.html">Cursos</a>
-                    </li>
-                    <li>
-                        <a href="./workshop.html">Workshop</a>
-                    </li>
-                    <li>
-                        <a href="./galeria.html">Galeria</a>
-                    </li>
-                    <li>
-                        <a href="./contacto.html">Contacto</a>
-                    </li> 
+        <nav class="fondonavbar navbar navbar-expand-lg navbar-white">
+            <div class="container">
+                <div class="logotipo">
+                  <a href="../index.html" class="navbar-brand"> <img src="../Images/logoinicio.png" alt="logotipo" height="80px"></a>
+                </div>
+               
+                <div>
+                  <button
+                  type="button"
+                  class="navbar-toggler"
+                  data-bs-target="#navbarNav"
+                  data-bs-toggle="collapse"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-lable="Toggle Navbar"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="navbarlinks">
+                        <a href="./cursos.html" class="nav-link">Cursos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./workshop.html" class="nav-link">Workshop</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./galeria.html" class="nav-link">Galeria</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./contacto.html" class="nav-link">Contacto</a>
+                      </li>
                 </ul>
+              </div>
             </div>
         </nav>
     </header>
