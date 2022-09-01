@@ -1,0 +1,381 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+@font-face {
+    font-family: Nanumgothicbold ;
+    src: url(../Fonts/NanumGothic-Bold.ttf);
+}
+
+@font-face {
+    font-family: Nanumgothicextrabold ;
+    src: url(../Fonts/NanumGothic-ExtraBold.ttf);
+}
+
+/* ------------------------------------------Header------------------------------------------ */
+
+.fondonavbar {
+    background-color: #ffda89;
+}
+
+.navbar ul li a {
+    font-size: 22px;
+    color: #B64201;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: Nanumgothicextrabold ;
+    padding: 25px;
+    margin: 10px;
+}
+
+.navbar ul li a:hover {
+    color: #ff5e00;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.logotipo {
+    animation-name: logotipo;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#parallax {
+    background-image: linear-gradient(rgba(255, 218, 137, 0.445), rgba(0, 0, 0, 0.1) ), url(../Images/Detalles6.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+
+#parallax2 {
+    background-image: linear-gradient(rgb(255, 218, 137, 0.445), rgba(0, 0, 0, 0.1) ), url(../Images/Detalles5.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+
+#parallax3 {
+    background-image: linear-gradient(rgb(255, 218, 137, 0.445), rgba(0, 0, 0, 0.1) ), url(../Images/Detalles3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+
+@keyframes logotipo {
+    0% {
+
+    }
+    50% {
+    transform: rotatey(360deg)
+    }
+    100% {
+    
+    }
+}
+
+/* ------------------------------------------Main------------------------------------------ */
+.box-intro {
+    background-color: #DB8200;
+    height: 30vh;
+    width: 100%;
+    font-family: Nanumgothicbold;
+    text-align: center;
+    font-size: 16px;
+    color: #181818;
+}
+
+.box-gallery {
+    background-color: #181818;
+}
+
+.titlegall{
+    font-family: Nanumgothicbold;
+    font-size: 20px;
+    background-color: #B64201;
+    color: #DED29E;
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.imagesart {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid #DED29E 7px;
+    border-radius: 14px;
+    cursor: pointer;
+    width: 230px;
+    height: 210px;
+    transition: all 0.4s ease-in-out;
+}
+
+.imagesart:hover {
+    width: 300px;
+    height: 280px;
+    border: solid #508104 11px;
+}
+
+.fondoform {
+    background-color: #181818;
+    height: 100vh;
+}
+
+.title-form {
+    font-family: Nanumgothicbold ;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: #B64201;
+    color: #DED29E;
+    text-align: center;
+    margin-top: 71px;
+    padding: 10px;
+}
+
+.cuerpo-form legend {
+    background-color: #DB8200;
+    color: #181818;
+    font-weight: 400;
+    box-shadow: 0px 5px 10px #181818;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.cuerpo-form {
+    background-color: #508104;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 26px;
+}
+
+.cartadirec {
+    background-color: #181818;
+}
+
+.card-box {
+    position: relative;
+    display: inline-block;
+    margin-top: 70px;
+}
+
+.textouno {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    color: #181818;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.textodos {
+    position: absolute;
+    top: 80px;
+    left: 45px;
+    color: #181818;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#parallaxw1 {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.1) ), url(../Images/Espacio.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+
+.atelierph {
+    background-color: #B64201;
+    font-family: Nanumgothicbold;
+    color: #181818;
+    font-size: 20px;
+    padding: 30px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 6px 12px #181818;
+}
+
+.boxcursos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 102vh;
+    background-color: #508104;
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 570px;
+    margin: 20px;
+    cursor: pointer;
+    background-color: #508104;
+    border: none;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 1.5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0px 7px 12px #000000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    background: rgb(0,0,0,.5);
+    text-align: center;
+    font-family: Nanumgothicbold;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: #181818;
+    padding: 15px;
+    color: #DED29E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 7px 12px #000000;
+    font-family: Nanumgothicbold;
+}
+
+.card .back .link {
+    border-top: solid 2px #DB8200;
+    height: 50px;
+    line-height: 50px;
+    font-family: Nanumgothicbold;
+}
+
+.card .back .link a {
+    color: #DED29E;
+    font-family: Nanumgothicbold;
+    font-size: 20px;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-family: Nanumgothicbold;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+    font-family: Nanumgothicbold;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+/* ------------------------------------------Footer------------------------------------------ */
+
+.footer {
+    background-color: #DED29E;
+    padding: 60px;
+}
+
+.networks a {
+    text-decoration: none;
+    color: #DB8200;
+    font-size: 60px;
+    margin: 28px;
+}
+
+.networks a i:hover {
+    color: #508104;
+    transform: scale(1.4);
+    transition: ease-in-out 0.2s;
+}
+
+.footer .networks li {
+    margin: 0px;
+    padding: 8px
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.copy {
+    font-family: Nanumgothicbold ;
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer .location {
+    font-family: Nanumgothicextrabold ;
+    font-size: 12px;
+    color: #508104;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.box-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .gallery {display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr;}
+    .titlegall {font-size: 18px;}
+    .footer {padding: 25px;}
+    .box-footer {display: flex; flex-direction: column;}
+    .footer .networks {display: flex; justify-content: center;}
+    .footer .location {font-size: 14px; position: relative; top: 30px; right: 15px; text-align: center;}
+    .logofooter {text-align: center; height: 90px;}
+    .copy {font-size: 12px;}
+    .navbar {justify-content: center;}
+    .cursos {display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr 1fr 1fr; height: 300vh;}
+    .slogan {display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr;}
+    .title-form {font-size: 15px; text-align: center; width: 100%;}
+    .cuerpo-form {width: 100%;}
+    .atelierph {background-color: #db830033; color: #DED29E; text-align: center; font-size: 21px; height: 120vh;}
+    #parallax {background-position: center;}
+    #parallax2 {background-position: center;}
+    #parallax3 {background-position: center;}
+    .box-intro {font-size: 12px; text-align: center; height: 320px;}
+    .card-box {position: relative; display: inline-block; margin-bottom: 70px; margin-top: 5px;}
+}
