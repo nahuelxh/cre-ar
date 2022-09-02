@@ -11,22 +11,84 @@
   font-family: Nanumgothicextrabold;
   src: url(../Fonts/NanumGothic-ExtraBold.ttf);
 }
-/* ------------------------------------------Header------------------------------------------ */
+.footer {
+  background-color: #DED29E;
+  padding: 60px;
+}
+.footer .box.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer .box.footer .networks a {
+  text-decoration: none;
+  color: #DB8200;
+  font-size: 60px;
+  margin: 28px;
+  transition: all ease-in-out 0.2s;
+}
+.footer .box.footer .networks a:hover {
+  color: #508104;
+  transform: scale(1.4);
+}
+
+.location {
+  font-family: Nanumgothicextrabold;
+  font-size: 12px;
+  color: #508104;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+  list-style-type: none;
+}
+.location .copy {
+  font-family: Nanumgothicbold;
+  color: #000000;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 25px;
+  }
+  .box-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .networks {
+    display: flex;
+    justify-content: center;
+  }
+  .footer .location {
+    font-size: 14px;
+    position: relative;
+    top: 30px;
+    right: 15px;
+    text-align: center;
+  }
+  .logofooter {
+    text-align: center;
+    height: 90px;
+  }
+  .copy {
+    font-size: 12px;
+  }
+}
 .fondonavbar {
   background-color: #ffda89;
 }
 
-.navbar ul li a {
+.navbar li a {
   font-size: 22px;
   color: #B64201;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   font-family: Nanumgothicextrabold;
   padding: 25px;
   margin: 10px;
 }
-
-.navbar ul li a:hover {
+.navbar li a:hover {
   color: #ff5e00;
   font-size: 24px;
   font-weight: 900;
@@ -41,6 +103,43 @@
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes logotipo {
+  50% {
+    transform: rotatey(360deg);
+  }
+}
+
+@keyframes logotipo {
+  50% {
+    transform: rotatey(360deg);
+  }
+}
+@media screen and (max-width: 768px) {
+  #parallax {
+    background-position: center;
+  }
+  #parallax2 {
+    background-position: center;
+  }
+  #parallax3 {
+    background-position: center;
+  }
+  .box-intro {
+    font-size: 12px;
+    text-align: center;
+    height: 320px;
+  }
+}
+.box-intro {
+  background-color: #DB8200;
+  height: 30vh;
+  width: 100%;
+  font-family: Nanumgothicbold;
+  text-align: center;
+  font-size: 16px;
+  color: #181818;
 }
 
 #parallax {
@@ -67,26 +166,25 @@
   height: 120vh;
 }
 
-@-webkit-keyframes logotipo {
-  50% {
-    transform: rotatey(360deg);
-  }
+#parallaxw1 {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.1)), url(../Images/Espacio.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 120vh;
 }
 
-@keyframes logotipo {
-  50% {
-    transform: rotatey(360deg);
-  }
-}
-/* ------------------------------------------Main------------------------------------------ */
-.box-intro {
-  background-color: #DB8200;
-  height: 30vh;
-  width: 100%;
+.atelierph {
+  background-color: #B64201;
   font-family: Nanumgothicbold;
-  text-align: center;
-  font-size: 16px;
   color: #181818;
+  font-size: 20px;
+  padding: 30px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 6px 12px #181818;
 }
 
 .box-gallery {
@@ -123,88 +221,6 @@
   width: 300px;
   height: 280px;
   border: solid #508104 11px;
-}
-
-.fondoform {
-  background-color: #181818;
-  height: 100vh;
-}
-
-.title-form {
-  font-family: Nanumgothicbold;
-  font-size: 22px;
-  font-weight: 700;
-  background-color: #B64201;
-  color: #DED29E;
-  text-align: center;
-  margin-top: 71px;
-  padding: 10px;
-}
-
-.cuerpo-form legend {
-  background-color: #DB8200;
-  color: #181818;
-  font-weight: 400;
-  box-shadow: 0px 5px 10px #181818;
-  text-align: center;
-  margin-top: 10px;
-  padding: 5px;
-}
-
-.cuerpo-form {
-  background-color: #508104;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 26px;
-}
-
-.cartadirec {
-  background-color: #181818;
-}
-
-.card-box {
-  position: relative;
-  display: inline-block;
-  margin-top: 70px;
-}
-
-.textouno {
-  position: absolute;
-  top: 20px;
-  left: 40px;
-  color: #181818;
-  font-size: 35px;
-  font-weight: 600;
-}
-
-.textodos {
-  position: absolute;
-  top: 80px;
-  left: 45px;
-  color: #181818;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-#parallaxw1 {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.1)), url(../Images/Espacio.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 120vh;
-}
-
-.atelierph {
-  background-color: #B64201;
-  font-family: Nanumgothicbold;
-  color: #181818;
-  font-size: 20px;
-  padding: 30px;
-  letter-spacing: 1px;
-  line-height: 30px;
-  text-align: center;
-  cursor: pointer;
-  box-shadow: 0px 6px 12px #181818;
 }
 
 .boxcursos {
@@ -308,54 +324,65 @@
   transform: perspective(600px) rotateY(360deg);
 }
 
-/* ------------------------------------------Footer------------------------------------------ */
-.footer {
-  background-color: #DED29E;
-  padding: 60px;
+.cartadirec {
+  background-color: #181818;
 }
 
-.networks a {
-  text-decoration: none;
-  color: #DB8200;
-  font-size: 60px;
-  margin: 28px;
+.textouno {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  color: #181818;
+  font-size: 35px;
+  font-weight: 600;
 }
 
-.networks a i:hover {
-  color: #508104;
-  transform: scale(1.4);
-  transition: ease-in-out 0.2s;
+.textodos {
+  position: absolute;
+  top: 80px;
+  left: 45px;
+  color: #181818;
+  font-size: 20px;
+  font-weight: 400;
 }
 
-.footer .networks li {
-  margin: 0px;
-  padding: 8px;
+.card-box {
+  position: relative;
+  display: inline-block;
+  margin-top: 70px;
 }
 
-footer ul {
-  list-style-type: none;
+.fondoform {
+  background-color: #181818;
+  height: 100vh;
 }
 
-.copy {
+.title-form {
   font-family: Nanumgothicbold;
-  color: #000000;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.footer .location {
-  font-family: Nanumgothicextrabold;
-  font-size: 12px;
-  color: #508104;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: #B64201;
+  color: #DED29E;
   text-align: center;
-  line-height: 35px;
-  cursor: pointer;
+  margin-top: 71px;
+  padding: 10px;
 }
 
-.box-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.cuerpo-form legend {
+  background-color: #DB8200;
+  color: #181818;
+  font-weight: 400;
+  box-shadow: 0px 5px 10px #181818;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.cuerpo-form {
+  background-color: #508104;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 26px;
 }
 
 @media screen and (max-width: 768px) {
@@ -366,34 +393,6 @@ footer ul {
   }
   .titlegall {
     font-size: 18px;
-  }
-  .footer {
-    padding: 25px;
-  }
-  .box-footer {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer .networks {
-    display: flex;
-    justify-content: center;
-  }
-  .footer .location {
-    font-size: 14px;
-    position: relative;
-    top: 30px;
-    right: 15px;
-    text-align: center;
-  }
-  .logofooter {
-    text-align: center;
-    height: 90px;
-  }
-  .copy {
-    font-size: 12px;
-  }
-  .navbar {
-    justify-content: center;
   }
   .cursos {
     display: grid;
@@ -407,11 +406,8 @@ footer ul {
     grid-template-rows: 1fr;
   }
   .title-form {
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
-    width: 100%;
-  }
-  .cuerpo-form {
     width: 100%;
   }
   .atelierph {
@@ -420,20 +416,6 @@ footer ul {
     text-align: center;
     font-size: 21px;
     height: 120vh;
-  }
-  #parallax {
-    background-position: center;
-  }
-  #parallax2 {
-    background-position: center;
-  }
-  #parallax3 {
-    background-position: center;
-  }
-  .box-intro {
-    font-size: 12px;
-    text-align: center;
-    height: 320px;
   }
   .card-box {
     position: relative;

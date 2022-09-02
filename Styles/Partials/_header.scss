@@ -1,0 +1,54 @@
+/// Barra de navegación de páginas///
+
+.fondonavbar {
+    background-color: #ffda89;
+}
+
+/// Barra de navegación de index///
+
+.navbar {
+    li {
+        a {
+            font-size: 22px;
+            color: #B64201;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            font-family: Nanumgothicextrabold ;
+            padding: 25px;
+            margin: 10px;
+            &:hover {
+                color: #ff5e00;
+                font-size: 24px;
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+.logotipo {
+    animation-name: logotipo;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes logotipo {
+    0% {
+
+    }
+    50% {
+    transform: rotatey(360deg)
+    }
+    100% {
+    
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    #parallax {background-position: center;}
+    #parallax2 {background-position: center;}
+    #parallax3 {background-position: center;}
+    .box-intro {font-size: 12px; text-align: center; height: 320px;}
+}
