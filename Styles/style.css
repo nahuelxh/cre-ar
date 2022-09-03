@@ -377,13 +377,13 @@ footer ul {
     .cursos {display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr 1fr 1fr; height: 300vh;}
     .slogan {display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr;}
     .title-form {font-size: 22px; text-align: center; width: 100%;}
-    .cuerpo-form {width: 100%;}
+    .cuerpo-form {width: 100%; padding: 60px;}
     .atelierph {background-color: #7747003a; color: #DED29E; text-align: center; font-size: 21px; height: 120vh;}
     #parallax {background-position: center;}
     #parallax2 {background-position: center;}
     #parallax3 {background-position: center;}
-    .box-intro {font-size: 12px; text-align: center; height: 320px;}
-    .card-box {position: relative; top: 2px; margin-bottom: 17px;}
+    .box-intro {font-size: 12px; text-align:center; height: 320px;}
+    .card-box {position: relative; top: 5px; margin-bottom: 20px;}
 }
 
 
