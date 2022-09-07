@@ -1,84 +1,10 @@
-*{
-    padding: 0%;
-    margin: 0%;
-}
-
-@font-face {
-    font-family: Nanumgothicbold ;
-    src: url(../Fonts/NanumGothic-Bold.ttf);
-}
-
-@font-face {
-    font-family: Nanumgothicextrabold ;
-    src: url(../Fonts/NanumGothic-ExtraBold.ttf);
-}
-
-/* ------------------------------------------Header------------------------------------------ */
-
-.fondonavbar {
-    background-color: #ffda89;
-}
-
-.navbar ul li a {
-    font-size: 22px;
-    color: #B64201;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-family: Nanumgothicextrabold ;
-    padding: 25px;
-    margin: 10px;
-}
-
-.navbar ul li a:hover {
-    color: #ff5e00;
-    font-size: 24px;
-    font-weight: 900;
-}
-
-.logotipo {
-    animation-name: logotipo;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-#parallax {
-    background-image: linear-gradient(rgba(255, 218, 137, 0.445), rgba(0, 0, 0, 0.1) ), url(../Images/Detalles6.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 120vh;
-}
-
-#parallax2 {
-    background-image: linear-gradient(rgb(255, 218, 137, 0.445), rgba(0, 0, 0, 0.1) ), url(../Images/Detalles5.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 120vh;
-}
-
-#parallax3 {
-    background-image: linear-gradient(rgb(255, 218, 137, 0.445), rgba(0, 0, 0, 0.1) ), url(../Images/Detalles3.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 120vh;
-}
-
-@keyframes logotipo {
-    0% {
-
-    }
-    50% {
-    transform: rotatey(360deg)
-    }
-    100% {
-    
-    }
-}
-
 /* ------------------------------------------Main------------------------------------------ */
+
+*{
+  padding: 0%;
+  margin: 0%;
+}
+
 .box-intro {
     background-color: #DB8200;
     height: 30vh;
@@ -87,13 +13,13 @@
     text-align: center;
     font-size: 16px;
     color: #181818;
-}
-
-.box-gallery {
+  }
+  
+  .box-gallery {
     background-color: #181818;
-}
-
-.titlegall{
+  }
+  
+  .titlegall {
     background-color: #B64201;
     font-family: Nanumgothicbold;
     color: #181818;
@@ -104,15 +30,15 @@
     text-align: center;
     cursor: pointer;
     box-shadow: 0px 6px 12px #181818;
-}
-
-.gallery {
+  }
+  
+  .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
-}
-
-.imagesart {
+  }
+  
+  .imagesart {
     margin-top: 20px;
     margin-bottom: 20px;
     border: solid #DED29E 7px;
@@ -121,23 +47,23 @@
     width: 230px;
     height: 210px;
     transition: all 0.5s ease-in-out;
-}
-
-.imagesart:hover {
+  }
+  
+  .imagesart:hover {
     width: 300px;
     height: 280px;
     border: solid #DB8200 11px;
     border-radius: 18px;
     cursor: pointer;
-}
-
-.fondoform {
+  }
+  
+  .fondoform {
     background-color: #181818;
     height: 115vh;
-}
-
-.title-form {
-    font-family: Nanumgothicbold ;
+  }
+  
+  .title-form {
+    font-family: Nanumgothicbold;
     font-size: 25px;
     font-weight: 700;
     background-color: #B64201;
@@ -147,60 +73,60 @@
     padding: 20px;
     border-radius: 20px;
     cursor: pointer;
-}
-
-.cuerpo-form legend {
+  }
+  
+  .cuerpo-form legend {
     background-color: #DB8200;
     color: #181818;
     font-weight: 400;
     box-shadow: 0px 5px 10px #181818;
     text-align: center;
     padding: 12px;
-}
-
-.cuerpo-form {
+  }
+  
+  .cuerpo-form {
     background-color: #508104;
     text-align: center;
     padding-top: 90px;
     padding-bottom: 120px;
     border-radius: 20px;
     cursor: pointer;
-}
-
-.cartadirec {
+  }
+  
+  .cartadirec {
     background-color: #181818;
-}
-
-.card-box {
+  }
+  
+  .card-box {
     position: relative;
     top: 20px;
     cursor: pointer;
-}
-
-.textouno {
+  }
+  
+  .textouno {
     color: #DED29E;
     margin-top: 15px;
     text-align: center;
     cursor: pointer;
-}
-
-.textodos {
+  }
+  
+  .textodos {
     color: #DED29E;
     font-size: 14px;
     margin-top: 14px;
     text-align: center;
     cursor: pointer;
-}
-
-#parallaxw1 {
-    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.1) ), url(../Images/Espacio.jpg);
+  }
+  
+  #parallaxw1 {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.1)), url(../Images/Espacio.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     height: 120vh;
-}
-
-.atelierph {
+  }
+  
+  .atelierph {
     background-color: #B64201;
     font-family: Nanumgothicbold;
     color: #181818;
@@ -211,18 +137,18 @@
     text-align: center;
     cursor: pointer;
     box-shadow: 0px 6px 12px #181818;
-}
-
-.boxcursos {
+  }
+  
+  .boxcursos {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     min-height: 102vh;
     background-color: #508104;
-}
-
-.card {
+  }
+  
+  .card {
     position: relative;
     width: 405px;
     height: 580px;
@@ -230,43 +156,45 @@
     cursor: pointer;
     background-color: #508104;
     border: none;
-}
-
-.card .face {
+  }
+  
+  .card .face {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     border-radius: 15px;
     overflow: hidden;
     transition: 1.5s;
-}
-
-.card .front {
+  }
+  
+  .card .front {
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0px 7px 12px #000000;
-}
-
-.card .front img {
+  }
+  
+  .card .front img {
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-.card .front h3 {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .card .front h3 {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 45px;
     line-height: 45px;
     color: #ffffff;
-    background: rgb(0,0,0,.5);
+    background: rgba(0, 0, 0, 0.5);
     text-align: center;
     font-family: Nanumgothicbold;
-}
-
-.card .back {
+  }
+  
+  .card .back {
     transform: perspective(600px) rotateY(180deg);
     background: #181818;
     padding: 15px;
@@ -277,113 +205,55 @@
     text-align: center;
     box-shadow: 0px 7px 12px #000000;
     font-family: Nanumgothicbold;
-}
-
-.card .back .link {
+  }
+  
+  .card .back .link {
     border-top: solid 2px #DB8200;
     height: 50px;
     line-height: 50px;
     font-family: Nanumgothicbold;
-}
-
-.card .back .link a {
+  }
+  
+  .card .back .link a {
     color: #DED29E;
     font-family: Nanumgothicbold;
     font-size: 20px;
-}
-
-.card .back h3 {
+  }
+  
+  .card .back h3 {
     font-size: 30px;
     margin-top: 20px;
     letter-spacing: 2px;
     font-family: Nanumgothicbold;
-}
-
-.card .back p {
+  }
+  
+  .card .back p {
     letter-spacing: 1px;
     font-family: Nanumgothicbold;
-}
-
-.card:hover .front {
+  }
+  
+  .card:hover .front {
     transform: perspective(600px) rotateY(180deg);
-}
-
-.card:hover .back {
+  }
+  
+  .card:hover .back {
     transform: perspective(600px) rotateY(360deg);
-}
+  }
 
-/* ------------------------------------------Footer------------------------------------------ */
+/* -------------------------------------- MQ mobile --------------------------------- */
 
-.footer {
-    background-color: #DED29E;
-    padding: 60px;
-}
-
-.networks a {
-    text-decoration: none;
-    color: #DB8200;
-    font-size: 60px;
-    margin: 28px;
-}
-
-.networks a i:hover {
-    color: #508104;
-    transform: scale(1.4);
-    transition: ease-in-out 0.2s;
-}
-
-.footer .networks li {
-    margin: 0px;
-    padding: 8px
-}
-
-footer ul {
-    list-style-type: none;
-}
-
-.copy {
-    font-family: Nanumgothicbold ;
-    color: #000000;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.footer .location {
-    font-family: Nanumgothicextrabold ;
-    font-size: 12px;
-    color: #508104;
-    text-align: center;
-    line-height: 35px;
-    cursor: pointer;
-}
-
-.box-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .gallery {display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr;}
     .titlegall {font-size: 17px;}
-    .footer {padding: 25px;}
-    .box-footer {display: flex; flex-direction: column;}
-    .footer .networks {display: flex; justify-content: center;}
-    .footer .location {font-size: 14px; position: relative; top: 30px; right: 15px; text-align: center;}
-    .logofooter {text-align: center; height: 90px;}
-    .copy {font-size: 12px;}
-    .navbar {justify-content: center;}
     .cursos {display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr 1fr 1fr; height: 300vh;}
     .slogan {display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr;}
     .title-form {font-size: 22px; text-align: center; width: 100%;}
     .cuerpo-form {width: 100%; padding: 60px;}
-    .atelierph {background-color: #7747003a; color: #DED29E; text-align: center; font-size: 21px; height: 120vh;}
+    .atelierph {background-color: #663d0049; color: #DED29E; text-align: center; font-size: 22px;}
+    #parallaxw1 {height: 140vh;}
     #parallax {background-position: center;}
     #parallax2 {background-position: center;}
     #parallax3 {background-position: center;}
     .box-intro {font-size: 12px; text-align:center; height: 320px;}
     .card-box {position: relative; top: 5px; margin-bottom: 20px;}
 }
-
-
