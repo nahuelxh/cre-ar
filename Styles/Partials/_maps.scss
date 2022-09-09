@@ -1,21 +1,23 @@
-$fonts: (
-    font-family: Nanumgothicbold,
-    src: url(../Fonts/NanumGothic-Bold.ttf),
-    font-family: Nanumgothicextrabold,
-    src: url(../Fonts/NanumGothic-ExtraBold.ttf)
-    );
+* {
+    padding: 0%;
+    margin: 0%;
+  }
+  
+  @font-face {
+    font-family: Nanumgothicbold;
+    src: url(../Fonts/NanumGothic-Bold.ttf);
+  }
+  @font-face {
+    font-family: Nanumgothicextrabold;
+    src: url(../Fonts/NanumGothic-ExtraBold.ttf);
+  }
+
 
 $borders: (
-
+  bordersRadius: 18px,
 );
 
-$display: (
-
+$colors: (
+  backgroundColorMain: rgb(182, 66, 1),
+  backgroundColorFondos: rgb(80, 129, 4)
 );
-
-$links: (
-
-);
-
-
-

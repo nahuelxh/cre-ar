@@ -1,0 +1,12 @@
+%flexWrapCenter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+%flexSpaceAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

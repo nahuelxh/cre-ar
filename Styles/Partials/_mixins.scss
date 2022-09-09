@@ -1,0 +1,6 @@
+@mixin textos ($textCl, $mgTop, $textAl, $cursorPt) {
+    color: $textCl;
+    margin-top: $mgTop;
+    text-align: $textAl;
+    cursor: $cursorPt;
+}
