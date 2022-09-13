@@ -3,7 +3,7 @@
   /* -------fondonavbar solamente para las pages-------- */
 
   .fondonavbar {
-    background-color: #e2e3e7;
+    background-color: rgb(226, 227, 231);
   }
   
   .navbar {
@@ -11,14 +11,14 @@
         li {
             a {
                 font-size: 22px;
-                color: #B64201;
+                color: rgb(182, 66, 1);
                 text-decoration: none;
                 transition: all 0.3s ease;
                 font-family: Nanumgothicextrabold;
                 padding: 25px;
                 margin: 10px;
                 &:hover {
-                        color: #ff5e00;
+                        color: rgb(255, 94, 0);
                         font-size: 24px;
                         font-weight: 900;
                     }

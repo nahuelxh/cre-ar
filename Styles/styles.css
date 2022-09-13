@@ -27,12 +27,12 @@
 /* ------------------------------------------Header------------------------------------------ */
 /* -------fondonavbar solamente para las pages-------- */
 .fondonavbar {
-  background-color: #e2e3e7;
+  background-color: rgb(226, 227, 231);
 }
 
 .navbar ul li a {
   font-size: 22px;
-  color: #B64201;
+  color: rgb(182, 66, 1);
   text-decoration: none;
   transition: all 0.3s ease;
   font-family: Nanumgothicextrabold;
@@ -40,7 +40,7 @@
   margin: 10px;
 }
 .navbar ul li a:hover {
-  color: #ff5e00;
+  color: rgb(255, 94, 0);
   font-size: 24px;
   font-weight: 900;
 }
@@ -105,27 +105,30 @@
 /* ------------------------------------------Main------------------------------------------ */
 /*------------index------------*/
 .box-intro {
-  background-color: #DB8200;
-  height: 30vh;
-  width: 100%;
-  font-family: Nanumgothicbold;
-  text-align: center;
-  font-size: 16px;
-  color: #181818;
-}
-
-/*----------workshop------------*/
-.atelierph {
   background-color: rgb(182, 66, 1);
   font-family: Nanumgothicbold;
-  color: #181818;
+  color: rgb(24, 24, 24);
   font-size: 21px;
   padding: 32px;
   letter-spacing: 1px;
   line-height: 30px;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0px 6px 12px #181818;
+  box-shadow: 0px 6px 12px rgb(24, 24, 24);
+}
+
+/*----------workshop------------*/
+.atelierph {
+  background-color: rgb(182, 66, 1);
+  font-family: Nanumgothicbold;
+  color: rgb(24, 24, 24);
+  font-size: 21px;
+  padding: 32px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 6px 12px rgb(24, 24, 24);
 }
 
 #parallaxw1 {
@@ -138,19 +141,19 @@
 
 /*------------galeria-----------*/
 .box-gallery {
-  background-color: #181818;
+  background-color: rgb(24, 24, 24);
 }
 .box-gallery .titlegall {
   background-color: rgb(182, 66, 1);
   font-family: Nanumgothicbold;
-  color: #181818;
+  color: rgb(24, 24, 24);
   font-size: 21px;
   padding: 32px;
   letter-spacing: 1px;
   line-height: 30px;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0px 6px 12px #181818;
+  box-shadow: 0px 6px 12px rgb(24, 24, 24);
 }
 
 .gallery {
@@ -161,7 +164,7 @@
 .gallery .imagesart {
   margin-top: 20px;
   margin-bottom: 20px;
-  border: solid #DED29E 7px;
+  border: solid rgb(222, 210, 158) 7px;
   border-radius: 18px;
   cursor: pointer;
   width: 230px;
@@ -171,7 +174,7 @@
 .gallery .imagesart:hover {
   width: 300px;
   height: 280px;
-  border: solid #DB8200 11px;
+  border: solid rgb(219, 130, 0) 11px;
   border-radius: 18px;
   cursor: pointer;
 }
@@ -187,7 +190,7 @@
   height: 580px;
   margin: 20px;
   cursor: pointer;
-  background-color: #508104;
+  background-color: rgb(80, 129, 4);
   border: none;
 }
 .boxcursos .card:hover .front {
@@ -209,7 +212,7 @@
 
 .card .front {
   transform: perspective(600px) rotateY(0deg);
-  box-shadow: 0px 7px 12px #000000;
+  box-shadow: 0px 7px 12px rgb(0, 0, 0);
 }
 .card .front img {
   position: absolute;
@@ -225,7 +228,7 @@
   width: 100%;
   height: 45px;
   line-height: 45px;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   background: rgba(0, 0, 0, 0.5);
   text-align: center;
   font-family: Nanumgothicbold;
@@ -233,24 +236,24 @@
 
 .card .back {
   transform: perspective(600px) rotateY(180deg);
-  background: #181818;
+  background: rgb(24, 24, 24);
   padding: 15px;
-  color: #DED29E;
+  color: rgb(222, 210, 158);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  box-shadow: 0px 7px 12px #000000;
+  box-shadow: 0px 7px 12px rgb(0, 0, 0);
   font-family: Nanumgothicbold;
 }
 .card .back .link {
-  border-top: solid 2px #DB8200;
+  border-top: solid 2px rgb(219, 130, 0);
   height: 50px;
   line-height: 50px;
   font-family: Nanumgothicbold;
 }
 .card .back .link a {
-  color: #DED29E;
+  color: rgb(222, 210, 158);
   font-family: Nanumgothicbold;
   font-size: 20px;
 }
@@ -277,7 +280,7 @@
   font-size: 25px;
   font-weight: 700;
   background-color: rgb(182, 66, 1);
-  color: #DED29E;
+  color: rgb(222, 210, 158);
   text-align: center;
   margin-top: 23px;
   padding: 20px;
@@ -294,10 +297,10 @@
   cursor: pointer;
 }
 .cuerpo-form legend {
-  background-color: #DB8200;
-  color: #181818;
+  background-color: rgb(219, 130, 0);
+  color: rgb(24, 24, 24);
   font-weight: 400;
-  box-shadow: 0px 5px 10px #181818;
+  box-shadow: 0px 5px 10px rgb(24, 24, 24);
   text-align: center;
   padding: 12px;
 }
@@ -344,6 +347,9 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
+  .fondoform {
+    height: auto;
+  }
   .fondoform .title-form {
     font-size: 23px;
     text-align: center;
@@ -359,29 +365,31 @@
     margin-bottom: 28px;
   }
   .atelierph {
-    background-color: rgba(102, 61, 0, 0.2862745098);
-    color: #DED29E;
+    background-color: rgba(49, 30, 0, 0.342);
+    color: rgb(222, 210, 158);
     text-align: center;
     font-size: 22px;
   }
   #parallaxw1 {
-    height: 140vh;
+    height: 110vh;
   }
   .box-intro {
-    font-size: 12px;
+    font-size: 15px;
+    height: 325px;
+    letter-spacing: 1px;
+    line-height: 20px;
     text-align: center;
-    height: 320px;
   }
 }
 /* ------------------------------------------Footer------------------------------------------ */
 .footer {
-  background-color: #DED29E;
+  background-color: rgb(222, 210, 158);
   padding: 60px;
 }
 .footer .box-footer .location {
   font-family: Nanumgothicextrabold;
   font-size: 12px;
-  color: #508104;
+  color: rgb(80, 129, 4);
   text-align: center;
   line-height: 35px;
   cursor: pointer;
@@ -389,19 +397,19 @@
 }
 .footer .box-footer .location .copy {
   font-family: Nanumgothicbold;
-  color: #000000;
+  color: rgb(0, 0, 0);
   font-size: 14px;
   cursor: pointer;
 }
 
 .networks a i {
   text-decoration: none;
-  color: #DB8200;
+  color: rgb(219, 130, 0);
   font-size: 75px;
   margin: 28px;
 }
 .networks a i:hover {
-  color: #508104;
+  color: rgb(80, 129, 4);
   transform: scale(1.4);
   transition: all 0.3s ease-in-out;
 }

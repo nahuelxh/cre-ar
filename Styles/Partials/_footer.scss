@@ -1,21 +1,21 @@
   /* ------------------------------------------Footer------------------------------------------ */
 
   .footer {
-    background-color: #DED29E;
+    background-color: rgb(222, 210, 158);
     padding: 60px;
     .box-footer {
         @extend %flexSpaceAround;
         .location {
             font-family: Nanumgothicextrabold;
             font-size: 12px;
-            color: #508104;
+            color: rgb(80, 129, 4);
             text-align: center;
             line-height: 35px;
             cursor: pointer;
             list-style-type: none;
             .copy {
                 font-family: Nanumgothicbold;
-                color: #000000;
+                color: rgb(0, 0, 0);
                 font-size: 14px;
                 cursor: pointer;
               }
@@ -27,11 +27,11 @@
     a {
         i {
             text-decoration: none;
-            color: #DB8200;
+            color: rgb(219, 130, 0);
             font-size: 75px;
             margin: 28px;
             &:hover {
-                color: #508104;
+                color: rgb(80, 129, 4);
                 transform: scale(1.4);
                 transition: all 0.3s ease-in-out;
             }
