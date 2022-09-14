@@ -63,7 +63,7 @@
     .imagesart {
         margin-top: 20px;
         margin-bottom: 20px;
-        border: solid rgb(222, 210, 158) 7px;
+        border: solid rgb(206, 200, 173) 7px;
         border-radius: map-get($borders, bordersRadius);
         cursor: pointer;
         width: 230px;
@@ -136,7 +136,7 @@
             width: 100%;
             height: 45px;
             line-height: 45px;
-            color: rgb(255, 255, 255);
+            color: rgb(206, 200, 173);
             background: rgba(0, 0, 0, 0.5);
             text-align: center;
             font-family: Nanumgothicbold;
@@ -149,7 +149,7 @@
         transform: perspective(600px) rotateY(180deg);
         background: rgb(24, 24, 24);
         padding: 15px;
-        color: rgb(222, 210, 158);
+        color: rgb(206, 200, 173);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -162,7 +162,7 @@
             line-height: 50px;
             font-family: Nanumgothicbold;
             a {
-                color: rgb(222, 210, 158);
+                color: rgb(206, 200, 173);
                 font-family: Nanumgothicbold;
                 font-size: 20px;
               }
@@ -200,7 +200,7 @@
         font-size: 25px;
         font-weight: 700;
         background-color: map-get($colors, backgroundColorMain);
-        color: rgb(222, 210, 158);
+        color: rgb(206, 200, 173);
         text-align: center;
         margin-top: 23px;
         padding: 20px;
@@ -236,7 +236,7 @@
           @include textos ($textCl: rgb(219, 130, 0), $mgTop: 5px, $textAl: center, $cursorPt: pointer)
           }
         .textodos {
-          @include textos ($textCl: rgb(222, 210, 158), $mgTop: 2px, $textAl: center, $cursorPt: pointer)
+          @include textos ($textCl: rgb(206, 200, 173), $mgTop: 2px, $textAl: center, $cursorPt: pointer)
         }
     }
   }
@@ -253,7 +253,7 @@
       grid-template-rows: 1fr;
     }
     .box-gallery .titlegall {
-      font-size: 18px;
+      font-size: 19px;
     }
     .cursos {
       display: grid;
@@ -286,17 +286,17 @@
         margin-bottom: 28px;
       }
     .atelierph {
-      background-color: rgba(37, 23, 0, 0.432);
-      color: rgb(222, 210, 158);
+      background-color: rgba(46, 36, 25, 0.342);
+      color: rgb(206, 200, 173);
       text-align: center;
-      font-size: 22px;
+      font-size: 23px;
     }
     #parallaxw1 {
-      height: 110vh;
+      height: auto;
     }
     .box-intro {
-      font-size: 16px;
-      height: 295px;
+      font-size: 19px;
+      height: auto;
       letter-spacing: 1px;
       line-height: 20px;
       text-align: center;

@@ -51,27 +51,27 @@
   }
   
   #parallax {
-    background-image: linear-gradient(rgba(255, 218, 137, 0.445), rgba(0, 0, 0, 0.1)), url(../Images/Detalles6.jpg);
+    background-image: linear-gradient(rgba(119, 113, 101, 0.527), rgba(0, 0, 0, 0.2)), url(../Images/Detalles6.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
   }
   
   #parallax2 {
-    background-image: linear-gradient(rgba(255, 218, 137, 0.445), rgba(0, 0, 0, 0.1)), url(../Images/Detalles5.jpg);
+    background-image: linear-gradient(rgba(119, 113, 101, 0.527), rgba(0, 0, 0, 0.2)), url(../Images/Detalles5.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
   }
   
   #parallax3 {
-    background-image: linear-gradient(rgba(255, 218, 137, 0.445), rgba(0, 0, 0, 0.1)), url(../Images/Detalles3.jpg);
+    background-image: linear-gradient(rgba(119, 113, 101, 0.527), rgba(0, 0, 0, 0.2)), url(../Images/Detalles3.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 100vh;
   }
 
 
@@ -82,14 +82,14 @@
    @media screen and (max-width: 768px) {
     #parallax {
       background-position: center;
-      height: 80vh;
+      height: 100vh;
     }
     #parallax2 {
       background-position: center;
-      height: 80vh;
+      height: 100vh;
     }
     #parallax3 {
       background-position: center;
-      height: 80vh;
+      height: 100vh;
     }
 }   
