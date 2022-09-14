@@ -275,7 +275,7 @@
 
 /*-----------contacto-----------*/
 .fondoform {
-  background-color: #181818;
+  background-color: rgb(24, 24, 24);
   height: 115vh;
 }
 .fondoform .title-form {
@@ -401,7 +401,7 @@
 }
 .footer .box-footer .location .copy {
   font-family: Nanumgothicbold;
-  color: rgb(0, 0, 0);
+  color: rgb(24, 24, 24);
   font-size: 14px;
   cursor: pointer;
 }

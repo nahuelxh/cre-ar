@@ -20,7 +20,7 @@
   .atelierph {
     background-color: map-get($colors, backgroundColorMain);
     font-family: Nanumgothicbold;
-    color: rgb(24, 24, 24);
+    color: map-get($colors, backgroundColorFondosOtros);
     font-size: 21px;
     padding: 32px;
     letter-spacing: 1px;
@@ -41,11 +41,11 @@
   /*------------galeria-----------*/
   
   .box-gallery {
-    background-color: rgb(24, 24, 24);
+    background-color: map-get($colors, backgroundColorFondosOtros);
     .titlegall {
         background-color: map-get($colors, backgroundColorMain);
         font-family: Nanumgothicbold;
-        color: rgb(24, 24, 24);
+        color: map-get($colors, backgroundColorFondosOtros);
         font-size: 21px;
         padding: 32px;
         letter-spacing: 1px;
@@ -193,7 +193,7 @@
   /*-----------contacto-----------*/
   
   .fondoform {
-    background-color: #181818;
+    background-color: map-get($colors, backgroundColorFondosOtros);
     height: 115vh;
     .title-form {
         font-family: Nanumgothicbold;
