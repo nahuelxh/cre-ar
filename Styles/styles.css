@@ -32,7 +32,7 @@
 
 .navbar ul li a {
   font-size: 22px;
-  color: rgb(182, 66, 1);
+  color: rgb(24, 24, 24);
   text-decoration: none;
   transition: all 0.3s ease;
   font-family: Nanumgothicextrabold;
@@ -71,7 +71,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 120vh;
+  height: 90vh;
 }
 
 #parallax2 {
@@ -79,7 +79,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 120vh;
+  height: 90vh;
 }
 
 #parallax3 {
@@ -87,19 +87,22 @@
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 120vh;
+  height: 90vh;
 }
 
 /* ---------------------------------------------- MQ ----------------------------------------------*/
 @media screen and (max-width: 768px) {
   #parallax {
     background-position: center;
+    height: 80vh;
   }
   #parallax2 {
     background-position: center;
+    height: 80vh;
   }
   #parallax3 {
     background-position: center;
+    height: 80vh;
   }
 }
 /* ------------------------------------------Main------------------------------------------ */
@@ -365,7 +368,7 @@
     margin-bottom: 28px;
   }
   .atelierph {
-    background-color: rgba(49, 30, 0, 0.342);
+    background-color: rgba(37, 23, 0, 0.432);
     color: rgb(222, 210, 158);
     text-align: center;
     font-size: 22px;
@@ -374,11 +377,12 @@
     height: 110vh;
   }
   .box-intro {
-    font-size: 15px;
-    height: 325px;
+    font-size: 16px;
+    height: 295px;
     letter-spacing: 1px;
     line-height: 20px;
     text-align: center;
+    padding: 15px;
   }
 }
 /* ------------------------------------------Footer------------------------------------------ */

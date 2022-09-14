@@ -11,7 +11,7 @@
         li {
             a {
                 font-size: 22px;
-                color: rgb(182, 66, 1);
+                color: rgb(24, 24, 24);
                 text-decoration: none;
                 transition: all 0.3s ease;
                 font-family: Nanumgothicextrabold;
@@ -55,7 +55,7 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 120vh;
+    height: 90vh;
   }
   
   #parallax2 {
@@ -63,7 +63,7 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 120vh;
+    height: 90vh;
   }
   
   #parallax3 {
@@ -71,7 +71,7 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 120vh;
+    height: 90vh;
   }
 
 
@@ -82,11 +82,14 @@
    @media screen and (max-width: 768px) {
     #parallax {
       background-position: center;
+      height: 80vh;
     }
     #parallax2 {
       background-position: center;
+      height: 80vh;
     }
     #parallax3 {
       background-position: center;
+      height: 80vh;
     }
 }   
