@@ -31,11 +31,11 @@
   }
 
   #parallaxw1 {
-    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.1)), url(../Images/Espacio.jpg);
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.3)), url(../Images/Espacio.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 120vh;
+    height: 100vh;
   }
 
   /*------------galeria-----------*/
@@ -70,8 +70,8 @@
         height: 210px;
         transition: all 0.5s ease-in-out;
         &:hover {
-            width: 300px;
-            height: 280px;
+            width: 290px;
+            height: 270px;
             border: solid rgb(219, 130, 0) 11px;
             border-radius: map-get($borders, bordersRadius);
             cursor: pointer;
@@ -91,7 +91,7 @@
         height: 580px;
         margin: 20px;
         cursor: pointer;
-        background-color: rgb(80, 129, 4);
+        background-color: map-get($colors, backgroundColorFondos);
         border: none;
         &:hover .front {
                 transform: perspective(600px) rotateY(180deg);
@@ -107,7 +107,7 @@
                     backface-visibility: hidden;
             border-radius: map-get($borders, bordersRadius);
             overflow: hidden;
-            transition: 1.5s;
+            transition: 1.7s;
 
           }
         
@@ -117,7 +117,7 @@
   .card {
     .front {
         transform: perspective(600px) rotateY(0deg);
-        box-shadow: 0px 7px 12px rgb(0, 0, 0);
+        box-shadow: 0px 6px 12px rgb(0, 0, 0);
         img {
             position: absolute;
             width: 100%;
@@ -132,12 +132,12 @@
     .front {
         h3 {
             position: absolute;
-            bottom: 0;
+            bottom: 20px;
             width: 100%;
-            height: 45px;
+            height: 50px;
             line-height: 45px;
-            color: rgb(206, 200, 173);
-            background: rgba(0, 0, 0, 0.5);
+            color: rgb(219, 130, 0);
+            background: rgba(0, 0, 0, 0.7);
             text-align: center;
             font-family: Nanumgothicbold;
           }
@@ -157,14 +157,14 @@
         box-shadow: 0px 7px 12px rgb(0, 0, 0);
         font-family: Nanumgothicbold;
         .link {
-            border-top: solid 2px rgb(219, 130, 0);
+            border-top: solid 3px rgb(219, 130, 0);
             height: 50px;
             line-height: 50px;
             font-family: Nanumgothicbold;
             a {
                 color: rgb(206, 200, 173);
                 font-family: Nanumgothicbold;
-                font-size: 20px;
+                font-size: 23px;
               }
           }
       }
@@ -173,10 +173,10 @@
   .card {
     .back {
         h3 {
-            font-size: 30px;
             margin-top: 20px;
             letter-spacing: 2px;
             font-family: Nanumgothicbold;
+            color: rgb(219, 130, 0) ;
           }
     }
   } 
@@ -185,6 +185,7 @@
     .back {
         p {
             letter-spacing: 1px;
+            font-size: 20px;
             font-family: Nanumgothicbold;
         }
     }
@@ -194,7 +195,7 @@
   
   .fondoform {
     background-color: map-get($colors, backgroundColorFondosOtros);
-    height: 115vh;
+    height: auto;
     .title-form {
         font-family: Nanumgothicbold;
         font-size: 25px;
@@ -202,7 +203,7 @@
         background-color: map-get($colors, backgroundColorMain);
         color: rgb(206, 200, 173);
         text-align: center;
-        margin-top: 23px;
+        margin-top: 10px;
         padding: 20px;
         border-radius: map-get($borders, bordersRadius);
         cursor: pointer;
@@ -212,8 +213,8 @@
   .cuerpo-form {
     background-color: map-get($colors, backgroundColorFondos);
     text-align: center;
-    padding-top: 90px;
-    padding-bottom: 120px;
+    padding-top: 105px;
+    padding-bottom: 130px;
     border-radius: map-get($borders, bordersRadius);
     cursor: pointer;
     legend {
@@ -230,13 +231,13 @@
     background-color: #181818;
     .card-box {
         position: relative;
-        top: 20px;
+        top: 10px;
         cursor: pointer;
         .textouno {
-          @include textos ($textCl: rgb(219, 130, 0), $mgTop: 5px, $textAl: center, $cursorPt: pointer)
+          @include textos ($textCl: rgb(219, 130, 0), $mgTop: 10px, $textAl: center, $cursorPt: pointer)
           }
         .textodos {
-          @include textos ($textCl: rgb(206, 200, 173), $mgTop: 2px, $textAl: center, $cursorPt: pointer)
+          @include textos ($textCl: rgb(206, 200, 173), $mgTop: 25px, $textAl: center, $cursorPt: pointer)
         }
     }
   }
@@ -286,7 +287,7 @@
         margin-bottom: 28px;
       }
     .atelierph {
-      background-color: rgba(46, 36, 25, 0.342);
+      background-color: rgba(31, 23, 15, 0.267);
       color: rgb(206, 200, 173);
       text-align: center;
       font-size: 23px;

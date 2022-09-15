@@ -3,7 +3,7 @@
   /* -------fondonavbar solamente para las pages-------- */
 
   .fondonavbar {
-    background-color: rgb(226, 227, 231);
+    background-color: rgb(236, 214, 192);
   }
   
   .navbar {
@@ -30,8 +30,8 @@
   .logotipo {
     -webkit-animation-name: logotipo;
             animation-name: logotipo;
-    -webkit-animation-duration: 7s;
-            animation-duration: 7s;
+    -webkit-animation-duration: 8s;
+            animation-duration: 8s;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
@@ -51,7 +51,7 @@
   }
   
   #parallax {
-    background-image: linear-gradient(rgba(119, 113, 101, 0.527), rgba(0, 0, 0, 0.2)), url(../Images/Detalles6.jpg);
+    background-image: linear-gradient(rgba(121, 117, 109, 0.445), rgba(0, 0, 0, 0.3)), url(../Images/Detalles6.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,7 +59,7 @@
   }
   
   #parallax2 {
-    background-image: linear-gradient(rgba(119, 113, 101, 0.527), rgba(0, 0, 0, 0.2)), url(../Images/Detalles5.jpg);
+    background-image: linear-gradient(rgba(121, 117, 109, 0.445), rgba(0, 0, 0, 0.3)), url(../Images/Detalles5.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@
   }
   
   #parallax3 {
-    background-image: linear-gradient(rgba(119, 113, 101, 0.527), rgba(0, 0, 0, 0.2)), url(../Images/Detalles3.jpg);
+    background-image: linear-gradient(rgba(121, 117, 109, 0.445), rgba(0, 0, 0, 0.3)), url(../Images/Detalles3.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
