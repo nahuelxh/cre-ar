@@ -1,14 +1,15 @@
   /* ------------------------------------------Footer------------------------------------------ */
 
   .footer {
-    background-color: #b5bac9;
+    background: rgb(236,214,192);
+    background: radial-gradient(circle, rgba(236,214,192,1) 23%, rgba(161,139,117,1) 73%); 
     padding: 65px;
     .box-footer {
         @extend %flexSpaceAround;
         .location {
             font-family: Nanumgothicbold;
             font-size: 19px;
-            color: map-get($colors, backgroundColorFondosOtros);
+            color: map-get($colors, backgroundColorMain);
             text-align: center;
             line-height: 40px;
             cursor: pointer;

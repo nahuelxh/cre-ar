@@ -26,13 +26,14 @@
 
 /* ------------------------------------------Footer------------------------------------------ */
 .footer {
-  background-color: #b5bac9;
+  background: rgb(236, 214, 192);
+  background: radial-gradient(circle, rgb(236, 214, 192) 23%, rgb(161, 139, 117) 73%);
   padding: 65px;
 }
 .footer .box-footer .location {
   font-family: Nanumgothicbold;
   font-size: 19px;
-  color: rgb(24, 24, 24);
+  color: rgb(182, 66, 1);
   text-align: center;
   line-height: 40px;
   cursor: pointer;
