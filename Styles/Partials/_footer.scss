@@ -28,11 +28,11 @@
     a {
         i {
             text-decoration: none;
-            color:  rgb(80, 129, 4);
+            color: map-get($colors, backgroundColorMain);
             font-size: 75px;
             margin: 28px;
             &:hover {
-                color: rgb(219, 130, 0);
+                color: map-get($colors, backgroundColorFondos);
                 transform: scale(1.3);
                 transition: all 0.2s ease-in-out;
             }

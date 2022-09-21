@@ -11,7 +11,7 @@
         li {
             a {
                 font-size: 22px;
-                color: map-get($colors, backgroundColorFondosOtros);
+                color: map-get($colors, backgroundColorMain);
                 text-decoration: none;
                 transition: all 0.3s ease;
                 font-family: Nanumgothicextrabold;
@@ -51,7 +51,7 @@
   }
   
   #parallax {
-    background-image: linear-gradient(rgba(121, 117, 109, 0.445), rgba(0, 0, 0, 0.3)), url(../Images/Detalles6.jpg);
+    background-image: linear-gradient(rgba(81, 94, 128, 0.3), rgba(0, 0, 0, 0.2)), url(../Images/Detalles1.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,7 +59,7 @@
   }
   
   #parallax2 {
-    background-image: linear-gradient(rgba(121, 117, 109, 0.445), rgba(0, 0, 0, 0.3)), url(../Images/Detalles5.jpg);
+    background-image: linear-gradient(rgba(81, 94, 128, 0.3), rgba(0, 0, 0, 0.2)), url(../Images/Paleta2.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@
   }
   
   #parallax3 {
-    background-image: linear-gradient(rgba(121, 117, 109, 0.445), rgba(0, 0, 0, 0.3)), url(../Images/Detalles3.jpg);
+    background-image: linear-gradient(rgba(81, 94, 128, 0.3), rgba(0, 0, 0, 0.2)), url(../Images/Detalles5.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
