@@ -100,15 +100,15 @@
   font-size: 22px;
   color: rgb(182, 66, 1);
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease-in-out;
   font-family: Nanumgothicextrabold;
-  padding: 25px;
-  margin: 10px;
+  padding: 5px;
+  margin: 40px;
 }
 .navbar ul li a:hover {
   color: rgb(255, 94, 0);
   font-size: 24px;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .logotipo {
@@ -169,6 +169,11 @@
   #parallax3 {
     background-position: center;
     height: 100vh;
+  }
+  .navbar ul li a {
+    margin: 20px;
+    font-size: 24px;
+    font-weight: 500;
   }
 }
 /* ------------------------------------------Main------------------------------------------ */
