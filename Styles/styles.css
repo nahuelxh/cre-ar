@@ -133,7 +133,7 @@
   }
 }
 #parallax {
-  background-image: linear-gradient(rgba(81, 94, 128, 0.3), rgba(0, 0, 0, 0.2)), url(../Images/Detalles1.jpg);
+  background-image: linear-gradient(rgba(81, 94, 128, 0.3), rgba(0, 0, 0, 0.2)), url(../Images/Detalles1.webp);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -141,7 +141,7 @@
 }
 
 #parallax2 {
-  background-image: linear-gradient(rgba(81, 94, 128, 0.3), rgba(0, 0, 0, 0.2)), url(../Images/Paleta2.jpg);
+  background-image: linear-gradient(rgba(81, 94, 128, 0.3), rgba(0, 0, 0, 0.2)), url(../Images/Paleta2.webp);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -149,7 +149,7 @@
 }
 
 #parallax3 {
-  background-image: linear-gradient(rgba(81, 94, 128, 0.3), rgba(0, 0, 0, 0.2)), url(../Images/Detalles5.jpg);
+  background-image: linear-gradient(rgba(81, 94, 128, 0.3), rgba(0, 0, 0, 0.2)), url(../Images/Detalles5.webp);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -206,7 +206,7 @@
 }
 
 #parallaxw1 {
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.3)), url(../Images/Espacio.jpg);
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.3)), url(../Images/Espacio.webp);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
