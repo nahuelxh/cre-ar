@@ -1,6 +1,6 @@
 /* ------------------------------------------Main------------------------------------------ */
 
-  /*------------index------------*/
+  /*------------index-------------*/
 
   .box-intro {
     background-color: map-get($colors, backgroundColorMain);
@@ -15,7 +15,7 @@
     box-shadow: 0px 6px 12px rgb(24, 24, 24);
   }
 
-  /*----------workshop------------*/
+  /*-------------workshop-------------*/
 
   .atelierph {
     background-color: map-get($colors, backgroundColorMain);
@@ -38,7 +38,7 @@
     height: 100vh;
   }
 
-  /*------------galeria-----------*/
+  /*-------------galeria-------------*/
   
   .box-gallery {
     background-color: map-get($colors, backgroundColorFondosOtros);
@@ -79,7 +79,7 @@
       }
   }
 
-  /*--------------cursos-------------*/
+  /*---------------cursos---------------*/
 
   .boxcursos {
     @extend %flexWrapCenter;
@@ -191,7 +191,7 @@
     }
   }
 
-  /*-----------contacto-----------*/
+  /*-------------contacto--------------*/
   
   .fondoform {
     background-color: map-get($colors, backgroundColorFondosOtros);
@@ -242,7 +242,32 @@
     }
   }
 
+  /*--------------coleccion--------------*/
 
+  .cardColeccion {
+    box-shadow: 2px 4px 10px 0px #181818;
+    padding: 4px;
+    margin: 8px;
+  }
+
+  .adquirir-Obra {
+    background-color: #181818;
+    color: rgb(219, 130, 0);
+    border-radius: 5px;
+    border-color: rgb(80, 129, 4);
+    border-width: 3px;
+    font-weight: 550;
+    padding: 3px;
+    width: 100%;
+  }
+
+  .fabrica-carrito {
+    color: aqua;
+  }
+
+  .imagen-carrito {
+    color: blueviolet;
+  }
 
 
    /* ---------------------------------------------- MQ ----------------------------------------------*/
