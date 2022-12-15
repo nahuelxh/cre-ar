@@ -8,13 +8,13 @@ let Carrito = JSON.parse (localStorage.getItem ('carrito')) || []
 
 
 const obras = [{
-id: 1, titulo: 'obra1', medidas: '318 x 276 cm', tecnica: 'oleo', soporte: 'tela', año: 2020, precio: 30000,
+id: 1, titulo: 'Río de la plata', medidas: '318 x 276 cm', tecnica: 'oleo', soporte: 'tela', año: 2020, precio: 30000, img: '',
 },
-{id: 2, titulo: 'obra2', medidas: '380 x 296 cm', tecnica: 'oleo', soporte: 'tela', año: 2010, precio: 38000, 
+{id: 2, titulo: 'Luna roja', medidas: '380 x 296 cm', tecnica: 'oleo', soporte: 'tela', año: 2010, precio: 38000, img: '',
 },
-{id: 3, titulo: 'obra3', medidas: '179 x 220 cm', tecnica: 'acuarela', soporte: 'papel', año: 2015, precio: 20000,
+{id: 3, titulo: 'obra3', medidas: '179 x 220 cm', tecnica: 'acuarela', soporte: 'papel', año: 2015, precio: 20000, img: '',
 },
-{id: 4,  titulo: 'obra4', medidas: '400 x 350 cm', tecnica: 'mixta', soporte: 'lienzo', año: 2010, precio: 50000,
+{id: 4,  titulo: 'obra4', medidas: '400 x 350 cm', tecnica: 'mixta', soporte: 'lienzo', año: 2010, precio: 50000, img: '',
 },
 {id: 5, titulo: 'obra5', medidas: '190 x 190 cm', tecnica: 'acuarela', soporte: 'papel', año: 2015, precio: 10000,
 },
@@ -55,9 +55,13 @@ obras.forEach((obra)=>{
     let content = document.createElement('div')
     content.className = 'cardColeccion'
     content.innerHTML = `
-    <img src"${obra.img}">
+    <img src="${obra.img}">
     <h2>${obra.titulo}</h2>
-    <p>$ ${obra.precio}</p>
+    <h4>${obra.medidas}</h4>
+    <h4>${obra.tecnica}</h4>
+    <h4>${obra.soporte}</h4>
+    <h4>${obra.año}</h4>
+    <h5>$ ${obra.precio}</h5>
     `
     productosColeccion.appendChild(content)
 

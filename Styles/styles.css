@@ -408,6 +408,11 @@
   margin: 8px;
 }
 
+.cardColeccion > img {
+  max-width: 10% px;
+  height: 10px;
+}
+
 .adquirir-Obra {
   background-color: #181818;
   color: rgb(219, 130, 0);
