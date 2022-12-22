@@ -4,53 +4,31 @@ const sumaCompras = document.getElementById ('sumaCompras')
 const fabricaCarrito = document.getElementById ('fabricaCarrito')
 
 
+
 let Carrito = JSON.parse (localStorage.getItem ('carrito')) || []
 
-
-const obras = [{
-id: 1, titulo: 'Ciudades Adversas', medidas: '60 x 100 cm', tecnica: 'acrílico', soporte: 'tela', año: 2019, precio: 7000, img: 'https://i.postimg.cc/k5K0GRHL/Ciudades-adversas.jpg',
-},
-{id: 2, titulo: 'Infinito', medidas: '40 x 100 cm', tecnica: 'acrílico con texturas', soporte: 'tela', año: 2018, precio: 6000, img: 'https://i.postimg.cc/sgkF34Tp/Infinito.jpg',
-},
-{id: 3, titulo: 'Interior', medidas: '70 x 70 cm', tecnica: 'acrílico con texturas', soporte: 'tela', año: 2018, precio: 5000, img: 'https://i.postimg.cc/bJR4HcpT/Interior.jpg',
-},
-{id: 4,  titulo: 'Naturaleza', medidas: '50 x 80 cm', tecnica: 'acrilico mixto', soporte: 'tela', año: 2019, precio: 6000, img: 'https://i.postimg.cc/5yNTs7tM/Naturaleza.jpg',
-},
-{id: 5, titulo: 'Naturaleza II', medidas: '50 x 60 cm', tecnica: 'acrílico', soporte: 'tela', año: 2016, precio: 4000, img: 'https://i.postimg.cc/W3VQkbLz/Naturaleza-II.jpg',
-},
-{id: 6, titulo: 'Paisaje', medidas: '60 x 60 cm', tecnica: 'acrilico', soporte: 'tela', año: 2022, precio: 4000, img: 'https://i.postimg.cc/jdk0FbN3/Paisaje.jpg',
-},
-{id: 7, titulo: 'Silencio', medidas: '80 x 80 cm', tecnica: 'acrílico', soporte: 'tela', año: 2017, precio: 5000, img: 'https://i.postimg.cc/13nhxjrm/Silencio.jpg',
-},
-{id: 8, titulo: 'obra8', medidas: '418 x 310 cm', tecnica: 'oleo', soporte: 'tela', año: 2020, precio: 60000, img: '',
-},
-{id: 9, titulo: 'obra9', medidas: '290 x 195 cm', tecnica: 'mixta', soporte: 'tela', año: 2010, precio: 45000, img: '',
-},
-{id: 10, titulo: 'obra10', medidas: '310 x 250 cm', tecnica: 'acuarela', soporte: 'papel', año: 2018, precio: 31000, img: '',
-},
-{id: 11, titulo: 'obra11', medidas: '450 x 600 cm', tecnica: 'oleo', soporte: 'tela', año: 2007, precio: 60000, img: '',
-},
-{id: 12, titulo: 'obra12', medidas: '180 x 90 cm', tecnica: 'oleo', soporte: 'lienzo', año: 2021, precio: 38000, img: '',
-},
-{id: 13, titulo: 'obra13', medidas: '270 x 210 cm', tecnica: 'mixta', soporte: 'madera', año: 2017, precio: 65000, img: '',
-},
-{id: 14, titulo: 'obra14', medidas: '380 x 280 cm', tecnica: 'oleo', soporte: 'tela', año: 2022, precio: 42000, img: '',
-},
-{id: 15, titulo: 'obra15', medidas: '160 x 60 cm', tecnica: 'acrilico', soporte: 'lienzo', año: 2016, precio: 23000, img: '',
-},
-{id: 16, titulo: 'obra16', medidas: '90 x 90 cm', tecnica: 'acuarela', soporte: 'papel', año: 2010, precio: 17000, img: '',
-},
-{id: 17, titulo: 'obra17', medidas: '180 x 100 cm', tecnica: 'oleo', soporte: 'tela', año: 2015, precio: 31000, img: '',
-},
-{id: 18, titulo: 'obra18', medidas: '80 x 50 cm', tecnica: 'acrilico', soporte: 'lienzo', año: 2005, precio: 26000, img: '',
-},
-{id: 19, titulo: 'obra19', medidas: '320 x 280 cm', tecnica: 'mixta', soporte: 'madera', año: 2022, precio: 70000, img: '',
-}];
+const coleccionJson = `productos.json`
 
 
-//  PRODUCTOS
+async function muestraCuadros() {
+    const respuesta = await fetch(coleccionJson);
+    const datosDeProductosJson = await respuesta.json();
+    cargarDatosJsonEnLista(datosDeProductosJson);
+
+    cargaDeProductos();
+    console.log("asdasdasd")
+}
+
+muestraCuadros () ;
+function cargarDatosJsonEnLista (datos) {
+    datos.forEach ((producto)=>
+    producto.push(producto))
+}   
 
 
+
+
+function cargaDeProductos() {
 obras.forEach((obra)=>{
     let content = document.createElement('div')
     content.className = 'cardColeccion'
@@ -88,8 +66,10 @@ adquirirObra.addEventListener('click' , () => {
         })
     }
 })
+}
 
-console.log(adquirirObra)
+
+
 
 //  CARRITO
 
